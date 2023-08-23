@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+
+
+header nav ul {
+    display: flex;
+    background-color: #333;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 70px;
+}
+
+nav ul div {
+
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+li {
+    margin: 0 20px;
+}
+
+a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: #ff8302;
+    text-decoration: underline;
+    padding: 10px 0;
+}
+
+.hero {
+    height: calc(100vh - 70px);
+    background-image: url('../images/university-wallpaper.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero h1 {
+    background-color: rgba(26, 52, 69, 0.5);
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* ------------------------end header css--------------------------*/
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 3%;
+}
+
+#about {
+    text-align: center;
+}
+
+#about p {
+    padding: 10px;
+}
+
+.green {
+    background-color: #a3c1cf;
+}
+
+.white {
+    background-color: #f2f9fc;
+}
+
+main h2 {
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+    margin: 20px auto;
+}
+
+/* .container there is in #specialization , #teachers, #plans and #contacts sections*/
+/* .parent and chid there are in services section*/
+.container,
+.parent {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.container div,
+.child div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+.child {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.child div {
+    width: 40%;
+    border: 2px solid #f2f9fc;
+    border-radius: 5px;
+}
+
+.child div p {
+    padding: 0px 20px 30px 20px;
+    text-align: left;
+}
+
+h3 {
+    padding: 20px 0;
+}
+
+#specialization .container div {
+    margin: 20px;
+}
+
+#teachers img {
+    width: 200px;
+    border-radius: 5px;
+    border: 2px solid white;
+    align-self: center;
+}
+
+#teachers .container div {
+    width: 275px;
+}
+
+/*------------------------ end teachers section-------------------*/
+
+/*------------------------ start plans--------------------------*/
+#plans .container div img {
+    width: 250px;
+    height: 175px;
+    border-radius: 5px;
+}
+
+.border {
+    background-color: #f5deb3;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#plans .container {
+    justify-content: space-evenly;
+    gap: 30px;
+}
+
+#plans .container div {
+    display: block;
+}
+
+#plans h2 {
+    margin: 20px 0;
+}
+
+#plans ul {
+    text-align: left;
+    list-style-position: inside;
+    margin: 20px 0;
+}
+
+#plans p {
+    text-align: left;
+}
+
+.yellow {
+    background-color: #fde98c;
+    padding: 10px;
+    border: 2px solid #ffd700;
+    border-radius: 4px;
+}
+
+
+/*----------------------- end plans-----------*/
+
+/*--------------------- start contact--------------------*/
+#contact .container {
+    flex-direction: column;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-self: center;
+}
+
+#contact .container div {
+    display: block;
+}
+
+form input,
+textarea {
+    border-radius: 3px;
+    border-color: white;
+    border-width: 1px;
+    width: 500px;
+}
+
+#contact button {
+    width: 300px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    padding: 10px 0;
+    text-transform: capitalize;
+    align-self: center;
+    margin: 30px auto;
+}
+
+#contact .container h1 {
+    margin-bottom: 30px;
+}
+
+footer ul {
+    height: 50px;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer ul li {
+    margin: 0 20px;
+}
+
+
+
+@media screen and (max-width : 992px) {
+
+    .child,
+    .container
+     {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .child div {
+        width: 70%;
+    }
+
+    #contact form,
+    form input,
+    textarea {
+        width: 250px;
+    }
+
+    #contact button {
+        width: 150px;
+    }
+
+    main h2 {
+        font-size: 35px;
+    }
+
+}
